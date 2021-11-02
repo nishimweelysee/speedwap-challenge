@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>position widget</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="text-center text-2xl mt-10">
+            <p>Where is it Positioned ?<span class="text-bold mx-1" id="result"></span></p>
+        </div>
+        <div class="position_widget grid grid-cols-3 justify-start gap-1 w-52 mx-auto my-10">
+            <div data-position="top left" class="h-16 w-16 bg-blue-600 hover:bg-blue-400 text-center flex flex-col justify-center rounded-xl text-white widget"><em class="fal fa-arrow-left transform rotate-45"></em></div>
+            <div data-position="top center" class="h-16 w-16 bg-blue-600 hover:bg-blue-400 text-center flex flex-col justify-center rounded-xl text-white widget"><em class="fal fa-arrow-up"></em></div>
+            <div data-position="top right" class="h-16 w-16 bg-blue-600 hover:bg-blue-400 text-center flex flex-col justify-center rounded-xl text-white widget"><em class="fal fa-arrow-up transform rotate-45"></em></div>
+            <div data-position="center left" class="h-16 w-16 bg-blue-600 hover:bg-blue-400 text-center flex flex-col justify-center rounded-xl text-white widget"><em class="fal fa-arrow-left"></em></div>
+            <div data-position="center" class="h-16 w-16 bg-blue-600 hover:bg-blue-400 text-center flex flex-col justify-center rounded-xl text-white widget"><em class="fas fa-circle"></em></div>
+            <div data-position="center right" class="h-16 w-16 bg-blue-600 hover:bg-blue-400 text-center flex flex-col justify-center rounded-xl text-white widget"><em class="fal fa-arrow-right"></em></div>
+            <div data-position="bottom left" class="h-16 w-16 bg-blue-600 hover:bg-blue-400 text-center flex flex-col justify-center rounded-xl text-white widget"><em class="fal fa-arrow-down transform rotate-45"></em></div>
+            <div data-position="bottom center" class="h-16 w-16 bg-blue-600 hover:bg-blue-400 text-center flex flex-col justify-center rounded-xl text-white widget"><em class="fal fa-arrow-down"></em></div>
+            <div data-position="bottom right" class="h-16 w-16 bg-blue-600 hover:bg-blue-400 text-center flex flex-col justify-center rounded-xl text-white widget"><em class="fal fa-arrow-right transform rotate-45"></em></div>
+        </div>
+    </body>
+    <script src="./main.js"></script>
+</html>
